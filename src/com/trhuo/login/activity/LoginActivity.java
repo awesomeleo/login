@@ -1,12 +1,13 @@
 package com.trhuo.login.activity;
 
-import com.trhuo.login.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+
+import com.trhuo.login.R;
 
 /**
  * µÇÂ¼Activity
@@ -15,10 +16,17 @@ import android.view.View.OnClickListener;
  */
 public class LoginActivity extends Activity implements OnClickListener{
 
+	private Button btnToRegister;
+	private Button btnForgetPwd;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		btnToRegister = (Button) findViewById(R.id.btnToRegister);
+		btnForgetPwd = (Button)findViewById(R.id.btnForgetPwd);
+		btnToRegister.setOnClickListener(this);
+		btnForgetPwd.setOnClickListener(this);
 	}
 
 	@Override
