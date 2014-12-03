@@ -30,8 +30,11 @@ containing a value of this type.
         public static final int border_width=0x7f010000;
     }
     public static final class color {
+        public static final int black=0x7f040003;
         public static final int text_color_black=0x7f040001;
         public static final int text_color_blue=0x7f040000;
+        public static final int text_color_gray=0x7f040004;
+        public static final int white=0x7f040002;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -91,9 +94,10 @@ containing a value of this type.
     }
     public static final class id {
         public static final int account=0x7f090001;
-        public static final int action_settings=0x7f090008;
+        public static final int action_settings=0x7f090009;
         public static final int btnCancel=0x7f090006;
         public static final int btnForgetPwd=0x7f090005;
+        public static final int btnMailRegister=0x7f090008;
         public static final int btnToRegister=0x7f090004;
         public static final int etPassword=0x7f090003;
         public static final int login_key=0x7f090002;

@@ -75,6 +75,7 @@
 	            android:layout_toRightOf="@id/login_key"
 	            android:layout_marginLeft="15dp"
 	            android:id="@+id/etPassword"
+	            android:password="true"
 	            />
 	    </RelativeLayout>
 	</LinearLayout>
@@ -88,7 +89,7 @@
 	    android:layout_marginBottom="20dp"
 	    android:text="登录"
 	    android:textColor="@android:color/white"
-	    android:textSize="18sp"
+	    android:textSize="16sp"
 	    />
 	<LinearLayout 
 	    android:layout_height="match_parent"

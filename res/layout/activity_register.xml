@@ -17,16 +17,17 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
            	android:text="@string/cancel"
-            android:textSize="15sp"
             android:textColor="#ff8200"
             android:background="@null"
             android:id="@+id/btnCancel"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
             />
-        <TextView 
+        <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/register"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:layout_centerInParent="true"
             />
     </RelativeLayout>
@@ -37,22 +38,142 @@
         android:background="@drawable/login_bg"
         android:layout_marginTop="15dp"
         >
-        <TextView 
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            >
+            <TextView 
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="0086"
             android:textColor="@color/text_color_blue"
             android:id="@+id/tvAreaCode"
             />
+        </LinearLayout>
         <ImageView
             android:layout_height="match_parent"
             android:layout_width="wrap_content"
             android:background="@drawable/login_line"
             />
-        <TextView
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            >
+            <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/China"
+            android:textSize="15sp"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请输入你的手机号"
+            android:textSize="15sp"
             />
     </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/login_bg_bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请设置密码"
+            android:textSize="15sp"
+            android:password="true"
+            />
+    </LinearLayout>
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_color_black"
+        android:text="密码为6~16位数字和字母"
+        android:textSize="14sp"
+        />
+    <Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/btn_login_selector"
+		android:text="@string/register"
+		android:textColor="@color/white"
+		android:textSize="16sp"    
+        />
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        >
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册表示你同意"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"  
+        />
+        <TextView 
+            android:text="服务使用协议"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/text_color_blue"
+        	android:textSize="14sp"
+            />
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="和"
+        android:textColor="@color/text_color_gray"
+        android:textSize="14sp"
+        />
+        <TextView 
+            android:text="隐私条款"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="@color/text_color_blue"
+        	android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:gravity="bottom|center_horizontal"
+	    android:paddingBottom="20dp"
+	    >
+	    <Button
+	        android:text="邮箱注册"
+	        android:textColor="@color/text_color_blue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:textSize="14sp"
+	        android:id="@+id/btnMailRegister"
+	        />
+	</LinearLayout>
 </LinearLayout>

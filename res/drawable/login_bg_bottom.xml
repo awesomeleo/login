@@ -4,14 +4,14 @@
 	    <shape 
 	        android:shape="rectangle"
 	        >
-	        <solid android:color="#cfcfcf"/>
+	        <solid android:color="#d7d7d7"/>
 	    </shape>
 	</item>
 	<item
 	    android:bottom="1dp"
 	    >
 	<shape>
-	    <solid android:color="#f9f9f9"/>
+	    <solid android:color="#ffffff"/>
 	</shape>	    
 	</item>
 </layer-list>
